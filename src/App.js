@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import ErrorPage from "./Pages/ErrorPage";
+import Users from "./Pages/Users";
+import ErrorBoundary from "./Pages/ErrorBoundary";
+import "./App.css";
+import { Link, Route, Routes } from "react-router-dom";
+import logo from './Desert Webpage Img/logo.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+
+      <nav className="nav-links">
+        <img className="logo" src={logo} alt="log" />
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/user">Users</Link>
+          </li>
+        </ul>
+      </nav>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<ErrorPage />} />
+          <Route path="/user" element={<Users />} />
+        </Routes>
+      </ErrorBoundary>
     </div>
   );
 }

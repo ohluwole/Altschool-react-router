@@ -48,21 +48,21 @@ p {
   cursor: pointer;
   margin: 10px 20px;
   background-position: center;
-  background-image: url("./DesertWebpageImg/pic-1.png");
+  background-image: url("../Desert-Webpage-Img/pic-1.png");
   background-size: cover;
   transition: transform 0.5s;
 }
 .card1 {
-  background-image: url("./DesertWebpageImg/pic-1.png");
+  background-image: url("../Desert-Webpage-Img/pic-1.png");
 }
 .card2 {
-  background-image: url("./DesertWebpageImg/pic-2.png");
+  background-image: url("../Desert-Webpage-Img/pic-2.png");
 }
 .card3 {
-  background-image: url("./DesertWebpageImg/pic-3.png");
+  background-image: url("../Desert-Webpage-Img/pic-3.png");
 }
 .card4 {
-  background-image: url("./DesertWebpageImg/pic-4.png");
+  background-image: url("../Desert-Webpage-Img/pic-4.png");
 }
 .card:hover {
   transform: translateY(-10px);

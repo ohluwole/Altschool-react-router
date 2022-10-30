@@ -9,7 +9,7 @@ function Home() {
         <div className="col">
           <h1>Sahara</h1>
           <p>
-            Welcome to the Desert.Enjoy your stay and take part in our luxurious
+            Welcome to the Desert. Enjoy your stay and take part in our luxurious
             packages. We have different activities you can partake of as a group
             and individually. Explore Sahara your way by selecting only the
             attractions you want to visit

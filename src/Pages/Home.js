@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css'
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -13,9 +14,11 @@ function Home() {
             and individually. Explore Sahara your way by selecting only the
             attractions you want to visit
           </p>
-          <button type="button" className="button">
-            Explore
-          </button>
+          <Link to="/about">
+            <button type="button" className="button">
+              Explore
+            </button>
+          </Link>
         </div>
         <div>
           <div>

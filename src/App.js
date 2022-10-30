@@ -6,7 +6,7 @@ import Users from "./Pages/Users";
 import ErrorBoundary from "./Pages/ErrorBoundary";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import logo from './Desert Webpage Img/logo.png'
+import logo from './Desert-Webpage-Img/logo.png'
 
 function App() {
   return (

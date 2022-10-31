@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './Users.css'
 import useFetch from "./useFetch";
+import ProfileCard from "../Component/ProfileCard";
 
 function Users() {
   const [page, setPage] = useState(1);
@@ -29,9 +30,10 @@ function Users() {
       {data?.results.map((each, index) => {
         const name = `${each.name.title} ${each.name.first} ${each.name.last}`;
         return (
-          <li key={name.toLowerCase().replaceAll(" ", "")}>{`${
-            index + 1
-          }.${name}`}</li>
+          // <li key={name.toLowerCase().replaceAll(" ", "")}>{`${
+          //   index + 1
+          // }.${name}`}</li>
+          <ProfileCard name={name} image={each.picture.medium} />
         );
       })}
       {

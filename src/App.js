@@ -13,7 +13,7 @@ function App() {
     <div className="container">
 
       <nav className="nav-links">
-        <img className="logo" src={logo} alt="log" />
+        <img className="logo" src={logo} alt="logo" />
         <ul>
           <li>
             <Link to="/">Home</Link>

@@ -7,7 +7,7 @@ function Home() {
     <div className="row">
       <div className="sahara">
         <div className="col">
-          <h1>Sahara</h1>
+          <h1 className="head">Sahara</h1>
           <p>
             Welcome to the Desert. Enjoy your stay and take part in our luxurious
             packages. We have different activities you can partake of as a group

@@ -3,8 +3,8 @@ import './ErrorPage.css'
 
 function ErrorPage() {
   return (
-    <div>
-      <h1>404 Page</h1>
+    <div className="error">
+      <h1>404 Page Not Found</h1>
     </div>
   );
 }
